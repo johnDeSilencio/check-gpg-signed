@@ -13,7 +13,7 @@ Copy the following into your `.pre-commit-config.yaml` file:
 
 ```yaml
 - repo: https://github.com/johnDeSilencio/check-gpg-signed
-  rev: v0.0.5
+  rev: v0.0.6
   hooks:
   - id: check-gpg-signed
     stages: [post-commit, post-rewrite]
