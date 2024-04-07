@@ -2,7 +2,7 @@
   name: Check GPG signed
   description: Checks whether the most recent commit was GPG signed
   # Check if the most recent commit was signed. If not, amend it with the GPG signature
-  entry: git verify-commit HEAD || echo "[*] hello world [*]"
+  entry: /bin/sh -c "git verify-commit HEAD || git commit -S --amend"
   language: system
   args: []
   always_run: true
